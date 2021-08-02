@@ -9,6 +9,6 @@ deployment:
      staging:
        branch: master
        commands:
-         - git remote add heroku git@heroku.com:herokuapplicationname.git
+         - git remote add heroku git@heroku.com:bodotika.git
          - "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
          - cd ../../.. && git subtree push --prefix https://github.com/lelajour/Bodotika heroku master
